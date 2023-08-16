@@ -1,0 +1,118 @@
+<--Factorial-->
+import java.util.*;
+public class Factorial{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number");
+		int num = sc.nextInt();
+	    int fact=1;	
+	    if(num == 0)
+	   {
+	   	System.out.println("Factorial is:0");	
+	   }
+	   else{
+		for(int i=1;i<=num;i++){
+			fact=fact*i;
+		}
+		System.out.print("Factorial of "+num+" is "+fact);
+	   }
+	}
+}
+
+
+<--------- Reverse number ----------->
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		int num,rem;
+		int r=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number");
+		num = sc.nextInt();
+		while(num > 0){
+			rem = num % 10;
+			r =(r * 10 + rem);
+		    num = num / 10;
+		}
+		System.out.println("Reveses number of "+num+" is "+r);
+	}
+}
+
+
+
+<-------------- no is prime or not ------------>
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int num,count=0;
+		
+		System.out.print("Enter the number;");
+		num = sc.nextInt();
+		
+		for(int i=2;i<=num;i++){
+			if(num % 2 == 0)
+			{
+				count++;
+			}
+		}
+		if(count <= 2)
+		   System.out.print(num + " Is Prime number");
+		 else
+		     System.out.print(num+" Is not prime number");
+	}
+} 
+
+
+
+
+<------ Sum Of Digit ----->
+import java.util.*;
+public class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		int num,sum=0,rem;
+		System.out.print("Enter the number");
+		num = sc.nextInt();
+		
+		while(num > 0){
+			
+			rem = num %10;
+			sum += rem;
+			num /= 10;
+		}
+		
+	  System.out.print("Sum of digit is "+sum);
+	}
+}
+
+
+<----- total no of digits----->
+import java.io.*;
+public class Main {
+	public static void main(String args[])throws Exception{
+	
+	
+	BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+	
+	int num,count=0,r;
+	
+	System.out.print("Enter the Number:");
+	
+	num = Integer.parseInt(b.readLine());
+	
+	while(num > 0){
+		r = num %10;
+		count++;
+		num /=10;
+	}
+	
+	System.out.print("Total no of digit is:"+count);f
+	}
+}
+
+
+<-----   ----->
