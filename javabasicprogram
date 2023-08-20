@@ -115,4 +115,41 @@ public class Main {
 }
 
 
-<-----   ----->
+
+
+<----- Min and Max Element in the array ----->
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	  
+	    Scanner sc = new Scanner(System.in);
+	    
+	   System.out.print("Enter the size of the array:");
+	   int size = sc.nextInt();
+	   
+	   int array[] = new int[size];
+	   
+	   System.out.println("Enter the Array elemen:");
+	   	   
+	   for(int i=0;i<size;i++){
+	   	array[i] = sc.nextInt();
+	   }
+	   
+	   int maxele = array[0];
+	   int minele = array[0];
+	   
+	   
+	   for(int i=0;i<size;i++)
+	   {
+	   	if(array[i] > maxele){
+	   		maxele = array[i];
+	   	}
+	   	if(array[i] < minele){
+	   	    minele = array[i];	
+	   	}
+	   }
+	   
+	   System.out.println("Max Element in the array is:"+maxele);
+	   System.out.println("Min element in array is:"+minele);
+	}
+}
