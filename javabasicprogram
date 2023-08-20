@@ -172,4 +172,42 @@ public class Main {
      	f2 = f3;
      }   
   }
+} 
+
+
+<---------- how many times digit appear in the number -------->
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+	       System.out.print("Enter the number:");
+			int number = sc.nextInt();	
+		
+		System.out.print("Enter the digit: ");
+		int digit = sc.nextInt();
+		int count=0,n;
+		n = number;
+	  if(number == 0 && digit == 0)
+	  {
+	  	System.out.println(digit + " digit appear in the number "+number+" is 0 time");
+	  }
+	  else if(number < 0){
+	  	System.out.println("Please Enter Positive Numner");
+	  }
+		else{
+			while(number > 0)
+			{
+				int rem = number % 10;
+				
+				if(rem == digit)
+				  {
+				  	count++;
+				  }
+				  number = number / 10;
+			}
+			System.out.println(digit + " digit Appear in the number "+n+" is "+count+" time");
+		}
+	}
 }
