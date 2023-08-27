@@ -1,4 +1,4 @@
- <--Factorial-->
+<--Factorial-->
 import java.util.*;
 public class Factorial{
 	public static void main(String[] args) {
@@ -116,3 +116,25 @@ public class Main {
 
 
 <----- Palindrome number ----->
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
+		int n = num,rev=0;
+		while(num > 0){
+			
+			int rem = num % 10;
+			rev = rev * 10 + rem;
+			num = num /10;
+		}
+		
+		if(rev == n)
+		  System.out.println("Palindrome");
+		else
+		  System.out.println("Not palindrome");
+	}
+}
