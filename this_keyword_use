@@ -1,0 +1,31 @@
+package Aksahyopps.com;
+
+/*
+ * 1:-this is a keyword in java
+ * 2:-this is reference variable which refer to current object this keyword resolve the ambiguity
+   3:-problem in an case where arg_list is same as instance variable
+   4:- syntax:
+         this.variable_name
+ */
+public class thiskeyword {
+
+	 int id;
+	 String name;
+	
+	thiskeyword(int id,String name){
+		/*
+		id = id;
+	    name = name;
+	    Compiler confuse which is instance variable or which is argument that why we use this key word
+		*/
+		this.id = id;
+		this.name =name;
+	}
+	public static void main(String[] args) {
+		
+		thiskeyword k = new thiskeyword(12,"Aksahy");
+		System.out.println("id:"+k.id);
+		System.out.println("Name:"+k.name);
+	}
+
+}
