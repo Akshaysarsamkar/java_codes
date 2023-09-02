@@ -2,7 +2,7 @@ package Akshayjava.com;
 
 import java.util.Scanner;
 
-public class Circleperimeter {
+public class CirclePerimeter {
 
 	public static void main(String[] args) {
 	
