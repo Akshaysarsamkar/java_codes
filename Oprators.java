@@ -2,10 +2,9 @@ package Akshayjava.com;
 import java.util.*;
 
 public class Oprators {
-	
+	public static Scanner sc = new Scanner(System.in);
 	void Arithmatic() {
-		
-		Scanner sc = new Scanner(System.in);
+	
 		
 		int num1,num2;
 		
@@ -22,8 +21,6 @@ public class Oprators {
 	}
 	
 void logical() {
-		
-		Scanner sc = new Scanner(System.in);
 		
 		int num1,num2;
 		
@@ -51,9 +48,7 @@ void logical() {
 	
 
 void camparison() {
-	
-	Scanner sc = new Scanner(System.in);
-	
+
 	int num1,num2;
 	
 	System.out.print("Enter the 2 number:");
@@ -87,15 +82,16 @@ void camparison() {
 	public static void main(String[] args) {
 		
 		Oprators op = new Oprators();
-
+                System.out.println("Arithmetic operator:");
 		op.Arithmatic();
+
 		System.out.println();
-		
 		
 		System.out.println("Logical operator:");
 		op.logical();
 		
 		System.out.println();
+
 		System.out.println("camparison operator:");
 		op.camparison();
 	}
