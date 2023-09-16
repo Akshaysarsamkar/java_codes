@@ -12,14 +12,26 @@ public class SwapNumber {
 		System.out.println("Enter the second number:");
 		int num2 =sc.nextInt();
 		
-		System.out.println("value of num1:"+num1 +" num2:"+num2);
-		
+		System.out.println("Before : value of num1:"+num1 +" num2:"+num2);
+
+		// 1) using + and - operator 
 		num1 = num1 + num2;
-		
 		num2 = num1 - num2;
-		
 		num1 = num1 - num2;
+
+		/*
+		// 2) using * and / operator 
+		num1 = num1 * num2;
+		num2 = num1 / num2;
+		num1 = num1 / num2;
+
+
+		// 3) using ^ operator 
+		num1 = num1 ^ num2;
+		num2 = num1 ^ num2;
+		num1 = num1 ^ num2;
+                */
 		
-		System.out.println("value of num1:"+num1 +" num2:"+num2);
+		System.out.println("After : value of num1:"+num1 +" num2:"+num2);
 	}
 }
