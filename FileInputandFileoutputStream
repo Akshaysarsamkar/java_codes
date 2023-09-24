@@ -1,0 +1,29 @@
+import java.io.*;
+import java.io.FileOutputStream;  
+public class Main {
+	public static void main(String[] args)throws IOException,FileNotFoundException{
+		
+		File f = new File("abc.txt");
+		int i;
+		if(!f.exists())
+		{
+			f.createNewFile();
+		}
+		
+		FileInputStream fis = new FileInputStream(f);
+		
+		FileOutputStream fos = new FileOutputStream(f);
+		
+		for(i = 0;i<100;i++){
+			fos.write(i%10);
+		}
+		
+		while((i = fis.read()) != -1)
+		     System.out.println(i);
+		
+	//	fos.Write(48454);
+		fos.close();
+		fis.close();
+		
+	}
+}
