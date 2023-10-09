@@ -1,7 +1,9 @@
-package Aksahyopps.com;
+package inheritance.com;
 class xyz{
 	int a = 100;
 }
+
+
 public class Abc extends xyz{
 
 	    int y = 200;
