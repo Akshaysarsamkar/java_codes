@@ -1,0 +1,32 @@
+ class A extends Thread{
+	   public void run(){
+	       
+	        String s = Thread.currentThread().getName();
+	      for(int i=0;i<3;i++){
+		     System.out.println(s);
+	      }
+
+	   }
+}
+
+
+public class SleepMethod{
+	
+	public static void main(String ar[]) throws 	InterruptedException{
+		
+		A a = new A();
+		A b = new A();
+		A c = new A();
+		
+		c.setName("T3");
+		a.setName("T1");
+		b.setName("T2");
+		
+		c.start();
+		c.join();
+		a.start();
+		b.start();
+	
+		
+	}
+}
