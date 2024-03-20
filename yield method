@@ -1,0 +1,72 @@
+ 
+import java.io.*;
+class A extends Thread{
+	
+	public void run(){
+		
+		
+		try{
+			
+			String s = Thread.currentThread().getName();
+			
+			for(int i=0;i<3;i++){
+				System.out.println(s);
+				Thread.yield();
+			}		
+			
+		}catch(Exception e){
+			
+		}
+	}
+	
+}
+
+
+class B extends Thread{
+	
+	public void run(){
+		
+		
+		try{
+			
+			String s = Thread.currentThread().getName();
+			
+			for(int i=0;i<3;i++){
+				System.out.println(s);
+			}		
+			
+		}catch(Exception e){
+			
+		}
+	}
+	
+}
+
+
+
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		A a = new A();
+		B b = new B();
+	
+		
+		
+		
+		a.setName("Thread1");
+		b.setName("Thread2");
+		
+		a.start();
+		b.start();
+		
+
+		
+
+		
+		
+
+	}
+}
