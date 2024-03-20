@@ -1,0 +1,36 @@
+ import java.io.*;
+class A extends Thread{
+	
+	public void run(){
+		System.out.println("Alive method program");
+	
+	}
+	
+}
+
+
+class B extends Thread{
+	
+	public void run(){
+
+		System.out.println("Alive method program");		
+	
+	}
+	
+}
+
+
+public class IsAliveMethod{
+	public static void main(String[] args) {
+		
+		A a = new A();
+		B b = new B();
+	
+		System.out.println(a.isAlive());
+		a.start();
+		System.out.println(a.isAlive());
+		b.start();
+			
+
+	}
+}
